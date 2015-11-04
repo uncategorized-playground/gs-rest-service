@@ -7,7 +7,7 @@ cd complete
 gradle run
 ```
 
-#### Test GET (Browser)
+#### Test GET with browser
 
 ```cmd
 http://localhost:8080/greeting
