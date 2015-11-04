@@ -13,7 +13,19 @@ public class JwControllerTest {
     public void helloJwTest() {
        String url = "http://localhost:8080/hellojw";
         RestTemplate template = new RestTemplate();
-        JwInfoTest test = template.getForObject(url, JwInfoTest.class);
+        JwInfo test = template.getForObject(url, JwInfo.class);
         Assert.assertEquals("Jannine", test.getName());
+    }
+
+    @Test
+    public void updateJwTest() {
+        String url = "http://localhost:8080/updatejw";
+        RestTemplate template = new RestTemplate();
+        JwInfo initial = new JwInfo() {{
+            setName("Jannine Weigel");
+        }};
+
+        JwInfo newInfo = template.postForObject(url, initial, JwInfo.class);
+        Assert.assertEquals("Jannine Weigel", newInfo.getName());
     }
 }
