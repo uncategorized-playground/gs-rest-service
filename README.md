@@ -1,13 +1,13 @@
 #### Run
 
-```cmd
+``` cmd
 cd complete
-gralde run
+gradle run
 ```
 
 #### Test service
 
-```cmd
+``` cmd
 http://localhost:8080/greeting
 ```
 
