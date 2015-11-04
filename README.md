@@ -10,3 +10,13 @@ gralde run
 ```bash
 http://localhost:8080/greeting
 ```
+
+
+#### Result
+
+```json
+{
+    id: 5,
+    content: "Hello, World!"
+}
+```
