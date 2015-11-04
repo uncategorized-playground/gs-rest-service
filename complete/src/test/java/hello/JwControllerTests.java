@@ -7,11 +7,11 @@ import org.springframework.web.client.RestTemplate;
 /**
  * Created by wk on 11/4/2015 AD.
  */
-public class JwControllerTest {
+public class JwControllerTests {
 
     @Test
     public void helloJwTest() {
-       String url = "http://localhost:8080/hellojw";
+        String url = "http://localhost:8080/hellojw";
         RestTemplate template = new RestTemplate();
         JwInfo test = template.getForObject(url, JwInfo.class);
         Assert.assertEquals("Jannine", test.getName());
