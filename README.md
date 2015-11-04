@@ -1,3 +1,5 @@
+### Test Spring REST API
+
 #### Run
 
 ``` cmd
@@ -5,7 +7,7 @@ cd complete
 gradle run
 ```
 
-#### Get
+#### Test GET (Browser)
 
 ```cmd
 http://localhost:8080/greeting
@@ -20,7 +22,7 @@ http://localhost:8080/greeting
 }
 ```
 
-### Post
+#### Test POST
 
 ```java
 @Test
