@@ -1,22 +1,21 @@
 #### Run
 
-```bash
+```cmd
 cd complete
 gralde run
 ```
 
 #### Test service
 
-```bash
+```cmd
 http://localhost:8080/greeting
 ```
-
 
 #### Result
 
 ```json
 {
-    id: 5,
-    content: "Hello, World!"
+    "id": 5,
+    "content": "Hello, World!"
 }
 ```
